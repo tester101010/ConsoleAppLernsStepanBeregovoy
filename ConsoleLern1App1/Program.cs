@@ -19,6 +19,8 @@ namespace ConsoleLern1App1
             int X4_1, x4_2, x4_3, x4_4, x4_5;
             int X5_1, x5_2, x5_3, x5_4, x5_5;
 
+            X1_1 = 1*1; x1_2 = 1*2; x1_3 = 1*3; x1_4 = 1 * 4; x1_5 = 1 * 5;
+
             Console.ReadKey();
         }
     }
