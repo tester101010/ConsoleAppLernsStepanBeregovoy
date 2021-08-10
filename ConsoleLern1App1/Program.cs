@@ -11,6 +11,7 @@ namespace ConsoleLern1App1
         static void Main(string[] args)
         {
             // таблица умножения 5 на 5 без массивов
+            // "this is second branch reserev"
             Console.WriteLine(" таблица умножения 5 на 5 без массивов");
 
             int X1_1, x1_2, x1_3, x1_4, x1_5;
