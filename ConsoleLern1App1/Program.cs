@@ -34,7 +34,7 @@ namespace ConsoleLern1App1
             Console.WriteLine($"line 4-\t {X4_1}\t{x4_2}\t{x4_3}\t{x4_4}\t{x4_5}");
             Console.WriteLine($"line 5-\t {X5_1}\t{x5_2}\t{x5_3}\t{x5_4}\t{x5_5}");
 
-
+            Console.WriteLine();
             Console.ReadKey();
         }
     }
