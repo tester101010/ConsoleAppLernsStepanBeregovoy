@@ -38,6 +38,7 @@ namespace ConsoleLern1App1
             Console.WriteLine($"line 5-\t {X5_1}\t{x5_2}\t{x5_3}\t{x5_4}\t{x5_5}");
 
             Console.WriteLine("this is first master branch");
+            Console.WriteLine("this is second branch reserev");
             Console.ReadKey();
         }
     }
