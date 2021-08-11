@@ -12,7 +12,7 @@ namespace ConsoleLern1App1
         {
             ///<summary>
             /// таблица умножения с массивом и вложенными циклами v_2
-            /// "this is second branch reserev"
+            /// "this is master branch"
             ///</summary>
             Console.WriteLine(" таблица умножения с массивом и вложенными циклами v_2");
             int amountN = 5;
@@ -53,7 +53,7 @@ namespace ConsoleLern1App1
                 }
                 Console.WriteLine();
             }
-            Console.WriteLine("\n this is second branch reserev");
+            Console.WriteLine("\n this is master branch");
             Console.ReadKey();
          }
     }
