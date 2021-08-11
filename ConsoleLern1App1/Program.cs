@@ -11,42 +11,31 @@ namespace ConsoleLern1App1
         static void Main(string[] args)
         {
             ///<summary>
-            /// таблица умножения с массивом и циклами v_1
+            /// таблица умножения с массивом и циклами v_1.1
             /// "this is second branch reserev"
             ///</summary>
-            Console.WriteLine(" таблица умножения с массивом и циклами v_1");
-
+            Console.WriteLine(" таблица умножения с массивом и циклами v_1.1");
             int amountN = 5;
+            Console.Write("Введите целое(!) число размерности таблицы  ");
+            string amountS = Console.ReadLine();
+            amountN = Convert.ToInt32(amountS);
+            Console.WriteLine($"Размерность таблицы: {amountN} на {amountN} ");
 
             int[,] m = new int[amountN, amountN];
 
             for (int i = 0; i < amountN; i++)
             {
-                m[0, i] = 1 * (i + 1);
+                for (int j = 0; j < amountN; j++)
+                {
+                    m[i, j] = (i + 1) * (j + 1);
+                }
             }
-            for (int i = 0; i < amountN; i++)
-            {
-                m[1, i] = 2 * (i + 1);
-            }
-            for (int i = 0; i < amountN; i++)
-            {
-                m[2, i] = 3 * (i + 1);
-            }
-            for (int i = 0; i < amountN; i++)
-            {
-                m[3, i] = 4 * (i + 1);
-            }
-            for (int i = 0; i < amountN; i++)
-            {
-                m[4, i] = 5 * (i + 1);
-            }
-
+            
             for (int i = 0; i < amountN; i++)
             {
                 Console.Write($"\t col { i + 1}");
             }
             Console.WriteLine();
-
             Console.Write("\t");
 
             for (int i = 0; i < amountN; i++)
@@ -57,12 +46,15 @@ namespace ConsoleLern1App1
 
             for (int i = 0; i < amountN; i++)
             {
-                Console.WriteLine($"\nline { i + 1}-\t  {m[i, 0]}\t  {m[i, 1]}\t  {m[i, 2]}\t  {m[i, 3]}\t  {m[i, 4]}");
+                Console.Write($"\nLine { i + 1} -");
+                for (int j = 0; j < amountN; j++)
+                {
+                    Console.Write($"  {m[i, j]}\t");
+                }
+                Console.WriteLine();
             }
-
             Console.WriteLine("\n this is second branch reserev");
-
             Console.ReadKey();
-        }
+         }
     }
 }
