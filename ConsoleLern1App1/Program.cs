@@ -11,10 +11,10 @@ namespace ConsoleLern1App1
         static void Main(string[] args)
         {
             ///<summary>
-            /// таблица умножения с массивом и циклами v_1.1
+            /// таблица умножения с массивом и вложенными циклами v_2
             /// "this is second branch reserev"
             ///</summary>
-            Console.WriteLine(" таблица умножения с массивом и циклами v_1.1");
+            Console.WriteLine(" таблица умножения с массивом и вложенными циклами v_2");
             int amountN = 5;
             Console.Write("Введите целое(!) число размерности таблицы  ");
             string amountS = Console.ReadLine();
