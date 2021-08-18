@@ -10,19 +10,53 @@ namespace ConsoleLern1App1
     {
         static void Main(string[] args)
         {
+            MultypleTable();
+
+            Console.ReadKey();
+        }
+
+        private static void MultypleTable()
+        {
             ///<summary>
             /// таблица умножения с массивом и вложенными циклами v_2
             /// "this is second branch reserev"
             ///</summary>
             Console.WriteLine(" таблица умножения с массивом и вложенными циклами v_2");
+
             int amountN = 5;
+
+            int[,] m;
+
+            InitAndCalculateTable(out amountN, out m);
+
+            Console.Write("\t      ");
+            for (int i = 0; i < amountN; i++)
+            {
+                Console.Write($" col_{ i + 1}  ");
+            }
+            Console.WriteLine();
+            Console.Write("\t    ");
+
+            for (int i = 0; i < amountN; i++)
+            {
+                Console.Write($"--------");
+            }
+            Console.WriteLine();
+
+            TableLineHeaderRender(amountN, m);
+
+            Console.WriteLine("\n this is second branch reserev");
+           // Console.ReadKey();
+        }
+
+        private static void InitAndCalculateTable(out int amountN, out int[,] m)
+        {
             Console.Write("Введите целое(!) число размерности таблицы  ");
             string amountS = Console.ReadLine();
             amountN = Convert.ToInt32(amountS);
             Console.WriteLine($"Размерность таблицы: {amountN} на {amountN} ");
 
-            int[,] m = new int[amountN, amountN];
-
+            m = new int[amountN, amountN];
             for (int i = 0; i < amountN; i++)
             {
                 for (int j = 0; j < amountN; j++)
@@ -30,31 +64,20 @@ namespace ConsoleLern1App1
                     m[i, j] = (i + 1) * (j + 1);
                 }
             }
-            
-            for (int i = 0; i < amountN; i++)
-            {
-                Console.Write($"\t col { i + 1}");
-            }
-            Console.WriteLine();
-            Console.Write("\t");
+        }
 
+        private static void TableLineHeaderRender(int amountN, int[,] m)
+        {
             for (int i = 0; i < amountN; i++)
             {
-            Console.Write($"--------");
-            }
-            Console.WriteLine();
-
-            for (int i = 0; i < amountN; i++)
-            {
-                Console.Write($"\nLine { i + 1} -");
+                Console.Write($"\n Line { i + 1}-");
+                Console.Write("      ");
                 for (int j = 0; j < amountN; j++)
                 {
-                    Console.Write($"  {m[i, j]}\t");
+                    Console.Write($" {m[i, j]}\t");
                 }
                 Console.WriteLine();
             }
-            Console.WriteLine("\n this is second branch reserev");
-            Console.ReadKey();
-         }
+        }
     }
 }
