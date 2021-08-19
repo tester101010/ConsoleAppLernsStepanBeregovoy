@@ -77,7 +77,8 @@ namespace ConsoleLern1App1
                 }
                 Console.WriteLine();
             }
-            Console.WriteLine("\n this is master branch");
+           // Console.WriteLine("\n this is master branch");
             Console.ReadKey();
+        }
     }
 }
