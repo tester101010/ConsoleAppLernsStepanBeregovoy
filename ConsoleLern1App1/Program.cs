@@ -10,7 +10,7 @@ namespace ConsoleLern1App1
     {
         static void Main(string[] args)
         {
-            MultypleTable();
+            //MultypleTable();
 
             Console.ReadKey();
         }
@@ -63,6 +63,7 @@ namespace ConsoleLern1App1
                     m[i, j] = (i + 1) * (j + 1);
                 }
             }
+           // return int[,] m;
         }
 
         private static void TableLineHeaderRender(int amountN, int[,] m)
